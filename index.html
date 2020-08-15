@@ -18,9 +18,9 @@
             <li><a href="#DatosAcadem">Datos Académicos</a></li>
             <li> <a href="#SitiosIteres">Sitios de Interés</a>
                 <ul>
-                    <li>Videos Favoritos</li>
-                    <li>Enlaces de Interés</li>
-                    <li>Imágenes</li>
+                    <li><a href="#videos">Videos Favoritos</a></li>
+                    <li><a href="#enlaces">Enlaces de Interés</a></li>
+                    <li><a href="#imgs">Imágenes</a></li>
                 </ul>
             </li>
             <li><a href="#Formulario">Formulario de Contacto</a></li>
@@ -75,10 +75,51 @@
         </section>
         <section id="SitiosInteres">
             <h2>Sitios de Interés</h2>
+            <h3 id="videos">Videos Favoritos</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BSVpBFlg1jg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MxriE6g3G9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 id="enlaces">Enlaces de Interés</h3>
+            <ul>
+                <li>Para buscar noticias de la actualidad en Colombia <a href="https://www.eltiempo.com/" title="Página web de noticias de Colombia">enlace de El Tiempo aquí</a></li>
+                <li>Para buscar noticias de la actualidad en el mundo <a href="https://www.bbc.com/mundo" title="Página web de noticias del mundo">enlace de BBC aquí</a></li>
+                <li>Para buscar información de negocios <a href="https://www.forbes.com/#7b5d0f542254" title="Página web de noticias de negocios">enlace de Forbes aquí</a></li>
+            </ul>
+            <h3 id="imgs">Imágenes</h3>
+            <img src="https://www.65ymas.com/uploads/s1/38/76/66/viajar.jpeg" width="300" height="220">
+            <img src="https://assets.entrepreneur.com/content/3x2/2000/20170808153808-contabilidad-finanzasparalaempresa.jpeg?width=700&crop=2:1" width="350" height="220"> 
+            <img src="https://ia-latam.com/wp-content/uploads/2019/06/mailchimp-1-852x500.jpg" width="330" height="220">
+            <img src="https://daliaempower.com/mediafiles/images/tmptmprfk6e64b.format-jpeg.jpg" width="330" height="220">
         </section>
         <section id="Formulario">
             <h2>Formulario de Contacto</h2>
+            <form action="/my-handling-form-page" method="post">
+                  <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name">
+                  </div>
+                
+                  <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email">
+                  </div>
+                
+                  <div>
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </div>
+                 
+                  <div class="button">
+                    <button type="submit">Enviar</button>
+                  </div>
+                </form>
         </section>
     </main>
+    <br> 
+    <footer> 
+        <a href="https://www.linkedin.com/in/camila-gomez-schrader"><img src="data:image/png;base64,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" width="50" height="50"></a>
+        <a href="https://www.facebook.com/CamilaGomezSchrader/"><img src="https://estaticos.elperiodico.com/resources/jpg/4/5/logo-facebook-1551433701754.jpg" width="50" height="50"></a>
+        <a href="https://www.instagram.com/camilagschrader/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" width="50" height="50"></a>
+        <a href="mailto:c.gomezs@uniandes.edu.co"><img src="data:image/png;base64,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" width="50" height="50"></a>
+    </footer>
 </body>
 </html>
